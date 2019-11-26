@@ -5,14 +5,15 @@ let array = ['wash car', 'do dishes']
 
 const App = () => {
   function addToDo(e) {
-    array.push(e)
+    array.push('new task')
+    console.log(array)
   }
   return (
     <>
     <h1>Today's Tasks</h1>
-    <li>A task</li>
-    <li>{array[array.length - 1]}</li>
-    <input placeholder="enter your task here"/> <button onClick={addToDo}>Submit</button>
+    <form>
+    <input type="text" placeholder="enter your task here"/> 
+    </form>
     </>
   );
 };
